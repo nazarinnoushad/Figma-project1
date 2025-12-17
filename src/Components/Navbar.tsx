@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
+import { useState } from "react"
+import { FiMenu, FiX } from "react-icons/fi"
 
-const menuItems = ["Home", "About", "Projects", "Service", "Contact"];
+const menuItems = ["Home", "About", "Projects", "Service", "Contact"]
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -77,5 +77,5 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar
 
