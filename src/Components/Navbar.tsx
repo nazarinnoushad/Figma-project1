@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { FiMenu, FiX } from "react-icons/fi"
+import Logo from '../assets/Images/Logo.png'
 
 const menuItems = [
   { name: "Home", path: "/" },
@@ -24,7 +25,7 @@ const Navbar = () => {
           onClick={() => navigate("/")}
         >
           <img
-            src="src/assets/Images/Logo.png"
+            src={Logo}
             alt="logo"
             className="w-12 2xl:w-16 h-auto"
           />
