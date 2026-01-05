@@ -1,10 +1,13 @@
+
+import Home1 from '../assets/Images/Home1.svg'
+
 const HomeHero = () => {
   return (
     <section className="relative w-full min-h-[720px] overflow-hidden">
       
       {/* Background Image */}
       <img
-        src="src/assets/Images/Home1.svg"
+        src={Home1}
         alt="Interior"
         className="absolute inset-0 w-full h-full object-cover"
       />
