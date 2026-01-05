@@ -1,17 +1,31 @@
 @import "tailwindcss";
+
 @theme {
+  /* ===== Breakpoints ===== */
   --breakpoint-*: initial;
-  --breakpoint-xs: 375px; /* 375px */
-  --breakpoint-sm: 425px; /* 425px */
-  --breakpoint-md: 768px; /* 768px */
-  --breakpoint-lg: 1024px; /* 1024px */
-  --breakpoint-xl: 1440px; /* 1440px */
+  --breakpoint-xs: 375px;   /* 375px */
+  --breakpoint-sm: 425px;   /* 425px */
+  --breakpoint-md: 768px;   /* 768px */
+  --breakpoint-lg: 1024px;  /* 1024px */
+  --breakpoint-xl: 1440px;  /* 1440px */
   --breakpoint-2xl: 1920px; /* 1920px */
   --breakpoint-3xl: 2560px; /* 2560px */
 
+  /* ===== Fonts ===== */
   --font-family-poppins: 'Poppins', sans-serif;
-  --font-family-montserrat : 'montserrat ', sans-serif;
-  --font-family-urbanist : 'urbanist ', sans-serif;
-  --font-family-exo : 'exo ', sans-serif;
-    
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-urbanist: 'Urbanist', sans-serif;
+  --font-family-exo: 'Exo', sans-serif;
+
+  /* ===== Logo Scroll Animation ===== */
+  --animate-scroll: scroll 40s linear infinite;
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }

@@ -106,23 +106,36 @@ export default function TeamSection() {
             </div>
           ))}
         </div>
+{/* ===== LOGOS ===== */}
+<p className="text-center text-sm 2xl:text-lg text-[#6B7280] mb-8">
+  Trusted by over 2K+ clients across the world
+</p>
 
-        {/* ===== LOGOS ===== */}
-        <p className="text-center text-sm 2xl:text-lg text-[#6B7280] mb-8">
-          Trusted by over 2K+ clients across the world
-        </p>
+<div className="relative overflow-hidden w-full">
+  <div className="flex w-max animate-scroll gap-16 2xl:gap-24">
+    
+    {/* First set */}
+    {logos.map((logo, i) => (
+      <img
+        key={`logo-1-${i}`}
+        src={logo}
+        alt="brand"
+        className="h-7 2xl:h-10 opacity-70 shrink-0"
+      />
+    ))}
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-10 place-items-center">
-          {logos.map((logo, i) => (
-            <img
-              key={i}
-              src={logo}
-              alt="brand"
-              className="h-7 2xl:h-10 opacity-70"
-            />
-          ))}
-        </div>
+    {/* Duplicate set (for seamless loop) */}
+    {logos.map((logo, i) => (
+      <img
+        key={`logo-2-${i}`}
+        src={logo}
+        alt="brand"
+        className="h-7 2xl:h-10 opacity-70 shrink-0"
+      />
+    ))}
 
+  </div>
+</div>
       </div>
     </section>
   );
